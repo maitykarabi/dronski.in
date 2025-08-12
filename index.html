@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dronski Pvt Ltd</title>
-  <meta name="description" content="Solar Panels, Patent MPPT, Drones & Smart Agri | Dronski.in">
+  <meta name="description" content="Solar Panels, Patent MPPT, Drones & Smart Agriculture - Dronski Pvt Ltd">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container">
       <img src="assets/logo.png" alt="Dronski Logo" class="logo">
@@ -22,41 +24,49 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Powering the Future</h1>
-      <p>Clean energy, smart drones, and precision agriculture for a sustainable tomorrow.</p>
-      <a href="solar.html" class="btn-primary">Learn More</a>
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1581090700227-4c4f50b9d5b6?auto=format&fit=crop&w=1400&q=80');">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Innovating for a Sustainable Future</h1>
+      <p>Solar energy, patented MPPT tech, drones, and smart agriculture solutions.</p>
+      <a href="contact.html" class="btn-primary">Get in Touch</a>
     </div>
   </section>
 
+  <!-- Features -->
   <section class="features container">
-    <div class="feature-card">
-      <img src="assets/solar.jpg" alt="Solar Panels">
+    <div class="feature-card" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=800&q=80" alt="Solar Panels">
       <h2>Solar Panels</h2>
-      <p>High-efficiency, durable solutions for maximum energy yield.</p>
+      <p>High-efficiency solutions for residential, commercial, and industrial projects.</p>
     </div>
-    <div class="feature-card">
-      <img src="assets/mppt.jpg" alt="Patent MPPT">
+    <div class="feature-card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1581091870622-48c1b6b36d3b?auto=format&fit=crop&w=800&q=80" alt="MPPT">
       <h2>Patent MPPT</h2>
-      <p>Proprietary tracking for best performance under shading conditions.</p>
+      <p>Maximize energy yield with our patented Maximum Power Point Tracking technology.</p>
     </div>
-    <div class="feature-card">
-      <img src="assets/drones.jpg" alt="Drones">
+    <div class="feature-card" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1536002932536-1620d1f84e86?auto=format&fit=crop&w=800&q=80" alt="Drones">
       <h2>Drones</h2>
-      <p>Rugged UAVs integrated with solar and analytical systems.</p>
+      <p>Advanced drone technology for monitoring, delivery, and precision agriculture.</p>
     </div>
-    <div class="feature-card">
-      <img src="assets/agriculture.jpg" alt="Smart Agriculture">
+    <div class="feature-card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1600976482848-63e0e21978b1?auto=format&fit=crop&w=800&q=80" alt="Smart Agriculture">
       <h2>Smart Agriculture</h2>
-      <p>IoT and AI-powered solutions for higher yields and efficiency.</p>
+      <p>AI-powered systems for efficient farming and higher yields.</p>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Dronski Pvt Ltd | Designed for dronski.in</p>
+      <p>&copy; 2025 Dronski Pvt Ltd | dronski.in</p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 </body>
 </html>
