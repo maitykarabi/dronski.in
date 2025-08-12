@@ -1,73 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dronski Pvt Ltd</title>
-  <link rel="icon" type="image/png" href="public/assests/logo.png">
-  <meta name="description" content="Solar Panels, Patent MPPT, Drones & Smart Agriculture - Dronski Pvt Ltd">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dronski Pvt Ltd - Innovations in Sustainable Technology</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
-<body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <img src="public/assests/logo.png" alt="Dronski Logo" class="logo">
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="solar.html">Solar</a>
-        <a href="mppt.html">MPPT</a>
-        <a href="drones.html">Drones</a>
-        <a href="agriculture.html">Agri</a>
-        <a href="contact.html" class="btn-primary">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Hero Section -->
-  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1581090700227-4c4f50b9d5b6?auto=format&fit=crop&w=1400&q=80');">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Innovating for a Sustainable Future</h1>
-      <p>Solar energy, patented MPPT tech, drones, and smart agriculture solutions.</p>
-      <a href="contact.html" class="btn-primary">Get in Touch</a>
-    </div>
-  </section>
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex items-center justify-between rounded-b-lg">
+        <div class="flex items-center">
+            <img src="https://placehold.co/40x40/4CAF50/FFFFFF?text=D" alt="Dronski Logo" class="h-10 w-10 mr-3 rounded-full">
+            <a href="#" class="text-2xl font-bold text-green-700">Dronski Pvt Ltd</a>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 rounded-md px-3 py-2">Home</a>
+            <a href="#solar" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 rounded-md px-3 py-2">Solar Panels</a>
+            <a href="#drones" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 rounded-md px-3 py-2">Drones</a>
+            <a href="#mppt" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 rounded-md px-3 py-2">Patent MPPT</a>
+            <a href="#agriculture" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 rounded-md px-3 py-2">Smart Agriculture</a>
+            <a href="#contact" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 font-medium shadow-md">Contact Us</a>
+        </nav>
+        <!-- Mobile menu button (Hamburger) -->
+        <button class="md:hidden text-gray-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </header>
 
-  <!-- Features -->
-  <section class="features container">
-    <div class="feature-card" data-aos="fade-right">
-      <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=800&q=80" alt="Solar Panels">
-      <h2>Solar Panels</h2>
-      <p>High-efficiency solutions for residential, commercial, and industrial projects.</p>
-    </div>
-    <div class="feature-card" data-aos="fade-up">
-      <img src="https://images.unsplash.com/photo-1581091870622-48c1b6b36d3b?auto=format&fit=crop&w=800&q=80" alt="MPPT">
-      <h2>Patent MPPT</h2>
-      <p>Maximize energy yield with our patented Maximum Power Point Tracking technology.</p>
-    </div>
-    <div class="feature-card" data-aos="fade-left">
-      <img src="https://images.unsplash.com/photo-1536002932536-1620d1f84e86?auto=format&fit=crop&w=800&q=80" alt="Drones">
-      <h2>Drones</h2>
-      <p>Advanced drone technology for monitoring, delivery, and precision agriculture.</p>
-    </div>
-    <div class="feature-card" data-aos="fade-up">
-      <img src="https://images.unsplash.com/photo-1600976482848-63e0e21978b1?auto=format&fit=crop&w=800&q=80" alt="Smart Agriculture">
-      <h2>Smart Agriculture</h2>
-      <p>AI-powered systems for efficient farming and higher yields.</p>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-green-600 to-green-800 text-white py-20 px-6 md:px-12 text-center overflow-hidden rounded-b-lg">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <!-- Background pattern or image -->
+            <svg class="w-full h-full" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h100v100H0z" fill="url(#grid-pattern)"></path>
+                <defs>
+                    <pattern id="grid-pattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M10 0L0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+                    </pattern>
+                </defs>
+            </svg>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                Pioneering Sustainable Innovation for a Smarter Future
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up delay-200">
+                Dronski Pvt Ltd: Integrating cutting-edge Drones, efficient Solar, patented MPPT technology, and advanced Smart Agriculture solutions.
+            </p>
+            <a href="#contact" class="inline-block bg-white text-green-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Discover Our Solutions
+            </a>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Dronski Pvt Ltd | dronski.in</p>
-    </div>
-  </footer>
+    <!-- Solar Panels Section -->
+    <section id="solar" class="py-16 px-6 md:px-12 bg-gray-100 mt-8 rounded-lg shadow-inner max-w-6xl mx-auto">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Revolutionizing Energy with Solar Panels</h2>
+            <p class="text-lg text-gray-700">
+                Dronski provides high-efficiency solar panel solutions, tailored for residential, commercial, and industrial needs. Harness the power of the sun and reduce your carbon footprint with our reliable and sustainable energy systems.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/FFD700/FFFFFF?text=Solar+Installation" alt="Solar Panel Installation" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Residential Solutions</h3>
+                <p class="text-gray-600">Custom solar installations for homes, designed to maximize energy savings and independence.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/FFD700/FFFFFF?text=Commercial+Solar" alt="Commercial Solar Solutions" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Commercial & Industrial</h3>
+                <p class="text-gray-600">Scalable solar power systems for businesses and industries, ensuring significant operational cost reductions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/FFD700/FFFFFF?text=Solar+Maintenance" alt="Solar Panel Maintenance" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Maintenance & Support</h3>
+                <p class="text-gray-600">Comprehensive maintenance services to ensure the longevity and optimal performance of your solar assets.</p>
+            </div>
+        </div>
+    </section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+    <!-- Drones Section -->
+    <section id="drones" class="py-16 px-6 md:px-12 bg-white mt-8 rounded-lg shadow-inner max-w-6xl mx-auto">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Advanced Drone Technology for Diverse Applications</h2>
+            <p class="text-lg text-gray-700">
+                Our state-of-the-art drones are built for precision, durability, and versatility, offering solutions for aerial surveying, inspections, security, and more.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/2196F3/FFFFFF?text=Drone+Survey" alt="Drone Surveying" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Aerial Surveying & Mapping</h3>
+                <p class="text-gray-600">High-resolution data collection for mapping, construction, and environmental monitoring.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/2196F3/FFFFFF?text=Drone+Inspection" alt="Drone Inspection" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Infrastructure Inspection</h3>
+                <p class="text-gray-600">Safe and efficient inspection of critical infrastructure like pipelines, power lines, and bridges.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/2196F3/FFFFFF?text=Drone+Security" alt="Drone Security" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Security & Surveillance</h3>
+                <p class="text-gray-600">Enhance security operations with real-time aerial monitoring and rapid response capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patent MPPT Section -->
+    <section id="mppt" class="py-16 px-6 md:px-12 bg-gray-100 mt-8 rounded-lg shadow-inner max-w-6xl mx-auto">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Patented MPPT Technology: Maximize Your Solar Output</h2>
+            <p class="text-lg text-gray-700">
+                At the core of our solar offerings lies our patented Maximum Power Point Tracking (MPPT) technology, ensuring your solar panels operate at peak efficiency under all conditions.
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-xl shadow-lg">
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/500x300/FF5722/FFFFFF?text=MPPT+Technology" alt="Patented MPPT Technology" class="rounded-lg w-full h-auto object-cover">
+            </div>
+            <div class="md:w-1/2 text-left">
+                <h3 class="text-3xl font-semibold text-gray-900 mb-4">Unrivaled Efficiency and Performance</h3>
+                <p class="text-gray-700 mb-4">
+                    Our unique MPPT algorithm dynamically adjusts to changing light and temperature conditions, extracting the maximum possible power from your solar array. This results in significantly higher energy yield and faster ROI.
+                </p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><strong class="text-green-700">Enhanced Energy Harvest:</strong> Up to 30% more power compared to conventional charge controllers.</li>
+                    <li><strong class="text-green-700">Intelligent Adaptation:</strong> Optimizes performance in varying weather, from bright sun to cloudy skies.</li>
+                    <li><strong class="text-green-700">Robust & Reliable:</strong> Built with industrial-grade components for long-term durability.</li>
+                    <li><strong class="text-green-700">Seamless Integration:</strong> Compatible with a wide range of solar panel types and battery systems.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Agriculture Section -->
+    <section id="agriculture" class="py-16 px-6 md:px-12 bg-white mt-8 rounded-lg shadow-inner max-w-6xl mx-auto">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Smart Agriculture: Cultivating the Future of Farming</h2>
+            <p class="text-lg text-gray-700">
+                Leveraging drones, IoT sensors, and data analytics, Dronski's smart agriculture solutions empower farmers with precision insights for optimized crop yield and resource management.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/8BC34A/FFFFFF?text=Crop+Monitoring" alt="Crop Monitoring" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Precision Crop Monitoring</h3>
+                <p class="text-gray-600">Drones equipped with multispectral cameras provide detailed health analysis of crops.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/8BC34A/FFFFFF?text=Automated+Irrigation" alt="Automated Irrigation" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Automated Irrigation & Fertilization</h3>
+                <p class="text-gray-600">Smart systems that deliver water and nutrients precisely where and when needed, reducing waste.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/8BC34A/FFFFFF?text=Farm+Analytics" alt="Farm Analytics" class="rounded-lg mb-4 w-full h-48 object-cover">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Data-Driven Farm Management</h3>
+                <p class="text-gray-600">Actionable insights from collected data to optimize planting, harvesting, and pest control.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-12 bg-gradient-to-r from-green-700 to-green-900 text-white mt-8 rounded-lg shadow-lg max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Connect with Dronski Pvt Ltd</h2>
+            <p class="text-lg opacity-90 mb-8">
+                Ready to transform your energy and agricultural endeavors? Reach out to us for a consultation or more information on our innovative solutions.
+            </p>
+            <form class="bg-white p-8 rounded-xl shadow-xl max-w-lg mx-auto text-left">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-200" placeholder="Your Name">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-200" placeholder="your@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-200" placeholder="How can we help you?"></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            <div class="mt-8">
+                <p class="text-lg opacity-90">Email: info@dronski.in</p>
+                <p class="text-lg opacity-90">Phone: +91 98765 43210</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 text-center mt-8 rounded-t-lg">
+        <p>&copy; 2025 Dronski Pvt Ltd. All rights reserved.</p>
+        <p class="mt-2">Innovating for a Greener Tomorrow.</p>
+    </footer>
+
 </body>
 </html>
