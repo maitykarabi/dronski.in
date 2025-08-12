@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Solar Panel | Dronski.in</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar Panels - Dronski Pvt Ltd</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="logo">Dronski.in</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="solar.html" class="active">Solar Panel</a></li>
-      <li><a href="mppt.html">MPPT</a></li>
-      <li><a href="irrigation.html">Irrigation</a></li>
-      <li><a href="drones.html">Drones</a></li>
-      <li><a href="smart-agriculture.html">Smart Agriculture</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Solar Panel Systems</h1>
-    <p>
-      Harness the power of the sun! Our solar panel solutions provide sustainable energy for your farm operations, reducing costs and carbon footprint. Reliable, efficient, and low-maintenance systems tailored for agriculture.
-    </p>
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Solar Panels in a Field" class="featured-img">
-  </main>
-  <footer>
-    &copy; 2025 Dronski.in. All rights reserved.
-  </footer>
+<header class="site-header">
+  <div class="container">
+    <img src="public/assets/logo.png" alt="Dronski Logo" class="logo">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="solar.html" class="active">Solar</a>
+      <a href="mppt.html">MPPT</a>
+      <a href="drones.html">Drones</a>
+      <a href="agriculture.html">Agri</a>
+      <a href="contact.html" class="btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1400&q=80');">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Solar Panels</h1>
+    <p>Efficient, reliable, and sustainable solar energy solutions for every need.</p>
+  </div>
+</section>
+
+<section class="container" style="margin: 60px auto;">
+  <h2 data-aos="fade-up">Why Choose Dronski Solar?</h2>
+  <p data-aos="fade-up">Our solar panels deliver maximum performance and are built to last in all climates.</p>
+  <ul data-aos="fade-up">
+    <li>High efficiency mono- and polycrystalline panels</li>
+    <li>Custom installation for residential & commercial</li>
+    <li>Long-term warranties and service</li>
+  </ul>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Dronski Pvt Ltd | dronski.in</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
