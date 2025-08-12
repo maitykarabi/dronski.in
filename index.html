@@ -1,81 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dronski Pvt Ltd</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="public/assests/logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dronski Pvt Ltd - Sustainable Innovations</title>
+    <!-- Linking to your external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Favicon link (ensure public/assests/logo.png exists) -->
+    <link rel="icon" type="image/png" href="public/assests/logo.png" />
+    <!-- Google Fonts - Inter for a professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html"><img src="public/assests/logo.png" alt="Dronski Logo" class="logo"></a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="solar.html">Solar Panel</a>
-        <a href="mppt.html">Patent MPPT</a>
-        <a href="drones.html">Drones</a>
-        <a href="agriculture.html">Smart Agriculture</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero" style="background-image: url('public/assests/hero_banner.jpeg');">
-    <div class="hero-content">
-      <h1>Innovating Agriculture with Solar, Drones, and Smart Farming Solutions</h1>
-      <p>Powering a sustainable future for farmers across India.</p>
-      <a href="contact.html" class="btn-primary">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="services">
-    <div class="container">
-      <h2>Our Solutions</h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <img src="public/assests/Solar-panels.jpg" alt="Solar Panels">
-          <h3>Solar Panel Solutions</h3>
-          <p>Efficient renewable energy to power farms sustainably.</p>
+    <!-- Header - Sticky and professional -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo-link animate-fade-in">
+                <!-- Ensure public/assests/logo.png is a clear, high-res logo -->
+                <img src="public/assests/logo.png" alt="Dronski Logo" class="logo">
+                <span class="company-name">Dronski Pvt Ltd</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="#about" class="nav-item">About Us</a></li>
+                    <li><a href="#services" class="nav-item">Our Solutions</a></li>
+                    <li><a href="solar.html" class="nav-item">Solar Panel</a></li>
+                    <li><a href="mppt.html" class="nav-item">Patent MPPT</a></li>
+                    <li><a href="drones.html" class="nav-item">Drones</a></li>
+                    <li><a href="agriculture.html" class="nav-item">Smart Agriculture</a></li>
+                    <li><a href="contact.html" class="btn btn-primary animate-fade-in delay-500">Contact Us</a></li>
+                </ul>
+                <!-- Hamburger menu for mobile (requires JavaScript) -->
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </nav>
         </div>
-        <div class="service-card">
-          <img src="public/assests/mppt.jpg" alt="MPPT Technology">
-          <h3>Patent MPPT Technology</h3>
-          <p>Maximizing solar power output with our patented tech.</p>
-        </div>
-        <div class="service-card">
-          <img src="public/assests/agri-drone.jpg" alt="Agriculture Drones">
-          <h3>Agriculture Drones</h3>
-          <p>Precision farming and crop monitoring made easy.</p>
-        </div>
-        <div class="service-card">
-          <img src="public/assests/smart-agri.jpg" alt="Smart Agriculture">
-          <h3>Smart Agriculture</h3>
-          <p>IoT and AI-powered tools for modern farming.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Call to Action -->
-  <section class="cta" style="background-image: url('public/assests/farm-tractor.jpg');">
-    <div class="cta-content">
-      <h2>Partner with Dronski for a Greener Future</h2>
-      <a href="contact.html" class="btn-primary">Contact Us</a>
-    </div>
-  </section>
+    <!-- Hero Section - Engaging banner with overlay -->
+    <section class="hero" style="background-image: url('public/assests/hero_banner.jpeg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="animate-fade-in-up">Innovating Agriculture with Solar, Drones, and Smart Farming Solutions</h1>
+            <p class="animate-fade-in-up delay-200">Powering a sustainable future for farmers across India with advanced technology.</p>
+            <a href="contact.html" class="btn btn-secondary animate-fade-in-up delay-400">Get in Touch Today</a>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2025 Dronski Pvt Ltd. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- About Us Section (New) - Introduce the company -->
+    <section id="about" class="about-us-section container reveal-section">
+        <h2 class="section-title animate-fade-in-up">Empowering Progress Through Innovation</h2>
+        <p class="section-description animate-fade-in-up delay-100">
+            At Dronski Pvt Ltd, we are committed to building a sustainable future by integrating advanced technology into everyday solutions.
+        </p>
+        <div class="about-content">
+            <div class="about-text animate-fade-in-up delay-200">
+                <h3 class="about-subtitle">Our Vision for a Greener Tomorrow</h3>
+                <p>
+                    Dronski Pvt Ltd specializes in bringing together diverse technologies—from renewable energy generation to precision agriculture—to create holistic solutions that are both environmentally friendly and economically viable. We believe in the power of innovation to address global challenges and uplift communities.
+                </p>
+                <ul>
+                    <li><strong>Integrated Solutions:</strong> Combining the best of solar, drone, and AI for maximum impact.</li>
+                    <li><strong>Patented Technology:</strong> Driving efficiency with our unique MPPT system, ensuring optimal energy harvest.</li>
+                    <li><strong>Sustainable Practices:</strong> Committed to solutions that benefit the planet and empower people.</li>
+                </ul>
+            </div>
+            <div class="about-image animate-fade-in-up delay-300">
+                <!-- Use a relevant image here, e.g., a hand holding a plant, or a solar panel array -->
+                <img src="https://placehold.co/600x400/5CB85C/FFFFFF?text=Dronski+Innovation" alt="Innovation and Sustainability">
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section - Highlight core offerings -->
+    <section id="services" class="services-section container reveal-section">
+        <h2 class="section-title animate-fade-in-up">Our Cutting-Edge Solutions</h2>
+        <p class="section-description animate-fade-in-up delay-100">
+            Discover how Dronski's integrated technologies are transforming industries and empowering sustainable growth.
+        </p>
+        <div class="service-grid">
+            <div class="service-card animate-fade-in-up delay-200">
+                <img src="public/assests/Solar-panels.jpg" alt="Solar Panels">
+                <h3>Solar Panel Solutions</h3>
+                <p>Efficient renewable energy to power farms sustainably, reducing operational costs and carbon footprint.</p>
+                <a href="solar.html" class="btn btn-link">Learn More &rarr;</a>
+            </div>
+            <div class="service-card animate-fade-in-up delay-300">
+                <img src="public/assests/mppt.jpg" alt="MPPT Technology">
+                <h3>Patent MPPT Technology</h3>
+                <p>Maximizing solar power output with our patented Maximum Power Point Tracking technology for superior efficiency.</p>
+                <a href="mppt.html" class="btn btn-link">Learn More &rarr;</a>
+            </div>
+            <div class="service-card animate-fade-in-up delay-400">
+                <img src="public/assests/agri-drone.jpg" alt="Agriculture Drones">
+                <h3>Agriculture Drones</h3>
+                <p>Precision farming and crop monitoring made easy with high-tech drones for optimal yield management.</p>
+                <a href="drones.html" class="btn btn-link">Learn More &rarr;</a>
+            </div>
+            <div class="service-card animate-fade-in-up delay-500">
+                <img src="public/assests/smart-agri.jpg" alt="Smart Agriculture">
+                <h3>Smart Agriculture</h3>
+                <p>IoT and AI-powered tools for modern farming, enhancing productivity and resource optimization.</p>
+                <a href="agriculture.html" class="btn btn-link">Learn More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section" style="background-image: url('public/assests/farm-tractor.jpg');">
+        <div class="cta-overlay"></div>
+        <div class="cta-content container">
+            <h2 class="animate-fade-in">Partner with Dronski for a Greener Future</h2>
+            <p class="animate-fade-in delay-200">Join us in embracing sustainable technologies that make a real difference.</p>
+            <a href="contact.html" class="btn btn-secondary animate-fade-in delay-400">Request a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer - Professional and informative -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo-link">
+                        <img src="public/assests/logo.png" alt="Dronski Logo" class="logo-footer">
+                        <span class="company-name-footer">Dronski Pvt Ltd</span>
+                    </a>
+                    <p>Pioneering sustainable innovation through advanced solar, drone, and smart agriculture technologies.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: karabi@dronski.in</p>
+                    <p>Phone: +91 8902676244</p>
+                    <p>Address: Pimpri-Chinchwad, Maharashtra, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dronski Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for reveal animations
+        const revealSections = document.querySelectorAll('.reveal-section, .animate-fade-in-up, .animate-fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add 'is-visible' class to trigger animation if element is in viewport
+                    if (entry.target.classList.contains('reveal-section')) {
+                         entry.target.querySelectorAll('.animate-fade-in-up, .animate-fade-in').forEach(el => {
+                            el.classList.add('is-visible');
+                         });
+                    } else {
+                        entry.target.classList.add('is-visible');
+                    }
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, {
+            threshold: 0.1, // Trigger when 10% of the item is visible
+            rootMargin: '0px 0px -100px 0px' // Start animation a bit before reaching the bottom of the viewport
+        });
+
+        revealSections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Mobile menu toggle (simple example, expand as needed)
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navList = document.querySelector('.nav-list');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        navList.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                navList.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
