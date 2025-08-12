@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MPPT | Dronski.in</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patent MPPT - Dronski Pvt Ltd</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="logo">Dronski.in</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="solar.html">Solar Panel</a></li>
-      <li><a href="mppt.html" class="active">MPPT</a></li>
-      <li><a href="irrigation.html">Irrigation</a></li>
-      <li><a href="drones.html">Drones</a></li>
-      <li><a href="smart-agriculture.html">Smart Agriculture</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Maximum Power Point Tracking (MPPT)</h1>
-    <p>
-      MPPT (Maximum Power Point Tracking) controllers increase the efficiency of your solar setup by ensuring your panels operate at their optimal power output, even in changing sunlight conditions. Maximize your energy harvest!
-    </p>
-    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="MPPT Controller" class="featured-img">
-  </main>
-  <footer>
-    &copy; 2025 Dronski.in. All rights reserved.
-  </footer>
+<header class="site-header">
+  <div class="container">
+    <img src="public/assets/logo.png" alt="Dronski Logo" class="logo">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="solar.html">Solar</a>
+      <a href="mppt.html" class="active">MPPT</a>
+      <a href="drones.html">Drones</a>
+      <a href="agriculture.html">Agri</a>
+      <a href="contact.html" class="btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1616401789048-35b233afab8a?auto=format&fit=crop&w=1400&q=80');">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Patented MPPT Technology</h1>
+    <p>Extract every watt of power with our cutting-edge Maximum Power Point Tracking.</p>
+  </div>
+</section>
+
+<section class="container" style="margin: 60px auto;">
+  <h2 data-aos="fade-up">MPPT Advantages</h2>
+  <p data-aos="fade-up">Our patented algorithm ensures your solar systems deliver optimal performance in all light conditions.</p>
+  <ul data-aos="fade-up">
+    <li>Up to 30% more energy yield</li>
+    <li>Real-time adaptive tracking</li>
+    <li>Durable and weatherproof electronics</li>
+  </ul>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Dronski Pvt Ltd | dronski.in</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
