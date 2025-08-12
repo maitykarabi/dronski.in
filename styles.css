@@ -36,6 +36,16 @@ body {
   font-weight: 500;
   transition: color 0.3s;
 }
+.logo {
+  height: 60px; /* Adjust to your preferred size */
+  width: auto; /* Keeps proportions */
+  display: block;
+}
+@media (max-width: 768px) {
+  .logo {
+    height: 45px; /* Smaller for mobile */
+  }
+}
 .site-nav a:hover { color: #059669; }
 .btn-primary {
   padding: 8px 16px;
