@@ -2,98 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dronski Pvt Ltd - Home</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="public/assests/logo.png">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dronski Pvt Ltd</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="public/assests/logo.png" />
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="logo-link">
-      <img src="assests/logo.png" alt="Dronski Logo" class="logo">
-    </a>
-    <nav class="site-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="solar.html">Solar Panel</a>
-      <a href="mppt.html">Patent MPPT</a>
-      <a href="drones.html">Drones</a>
-      <a href="agriculture.html">Smart Agriculture</a>
-      <a href="contact.html" class="btn-primary">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- ===== HERO ===== -->
-<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56f3d1b1ad68?auto=format&fit=crop&w=1920&q=80');">
-  <div class="hero-content" data-aos="fade-up">
-    <h1>Innovating Agriculture with Solar, Drones, and Smart Farming Solutions</h1>
-    <p>Powering a sustainable future for farmers across India</p>
-    <a href="contact.html" class="btn-primary">Get Started</a>
-  </div>
-</section>
-
-<!-- ===== SERVICES ===== -->
-<section class="services container">
-  <h2 data-aos="fade-up">Our Solutions</h2>
-  <div class="service-grid">
-    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af1f?auto=format&fit=crop&w=800&q=80" alt="Solar Panels">
-      <h3>Solar Panel Solutions</h3>
-      <p>Efficient solar systems to power agricultural needs sustainably.</p>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html"><img src="public/assests/logo.png" alt="Dronski Logo" class="logo"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="solar.html">Solar Panel</a>
+        <a href="mppt.html">Patent MPPT</a>
+        <a href="drones.html">Drones</a>
+        <a href="agriculture.html">Smart Agriculture</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-      <img src="https://images.unsplash.com/photo-1581092334655-85c1f24d9b21?auto=format&fit=crop&w=800&q=80" alt="MPPT">
-      <h3>Patent MPPT Technology</h3>
-      <p>Maximizing solar energy efficiency with our patented MPPT tech.</p>
-    </div>
-    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-      <img src="https://images.unsplash.com/photo-1591181520184-bf6cc86eac67?auto=format&fit=crop&w=800&q=80" alt="Drones">
-      <h3>Agricultural Drones</h3>
-      <p>Precision farming with high-tech drone monitoring and spraying.</p>
-    </div>
-    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-      <img src="https://images.unsplash.com/photo-1615195964696-58f0a2813a1f?auto=format&fit=crop&w=800&q=80" alt="Smart Agriculture">
-      <h3>Smart Agriculture</h3>
-      <p>IoT and AI-powered solutions for better crop yield and efficiency.</p>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- ===== CALL TO ACTION ===== -->
-<section class="cta" data-aos="fade-up" style="background-image: url('https://images.unsplash.com/photo-1601933470915-297d1d80e8b2?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
-  <div class="cta-overlay">
-    <h2>Ready to transform your farm?</h2>
-    <p>Contact Dronski today and start your journey towards smarter, greener farming.</p>
-    <a href="contact.html" class="btn-primary">Contact Us</a>
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="hero" style="background-image: url('public/assests/hero_banner.jpeg');">
+    <div class="hero-content">
+      <h1>Innovating Agriculture with Solar, Drones, and Smart Farming Solutions</h1>
+      <p>Powering a sustainable future for farmers across India.</p>
+      <a href="contact.html" class="btn-primary">Get in Touch</a>
+    </div>
+  </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <p>&copy; 2025 Dronski Pvt Ltd. All Rights Reserved.</p>
-</footer>
+  <!-- Services -->
+  <section class="services">
+    <div class="container">
+      <h2>Our Solutions</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="public/assests/Solar-panels.jpg" alt="Solar Panels">
+          <h3>Solar Panel Solutions</h3>
+          <p>Efficient renewable energy to power farms sustainably.</p>
+        </div>
+        <div class="service-card">
+          <img src="public/assests/mppt.jpg" alt="MPPT Technology">
+          <h3>Patent MPPT Technology</h3>
+          <p>Maximizing solar power output with our patented tech.</p>
+        </div>
+        <div class="service-card">
+          <img src="public/assests/agri-drone.jpg" alt="Agriculture Drones">
+          <h3>Agriculture Drones</h3>
+          <p>Precision farming and crop monitoring made easy.</p>
+        </div>
+        <div class="service-card">
+          <img src="public/assests/smart-agri.jpg" alt="Smart Agriculture">
+          <h3>Smart Agriculture</h3>
+          <p>IoT and AI-powered tools for modern farming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- JS for AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
+  <!-- Call to Action -->
+  <section class="cta" style="background-image: url('public/assests/farm-tractor.jpg');">
+    <div class="cta-content">
+      <h2>Partner with Dronski for a Greener Future</h2>
+      <a href="contact.html" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Dronski Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
