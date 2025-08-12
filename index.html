@@ -15,7 +15,26 @@
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            /* Subtle background texture for professionalism */
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M950 0h1v1000h-1zM0 950h1000v1H0z'/%3E%3C/g%3E%3C/svg%3E");
         }
+        /* Custom animation for fade-in effect */
+        @keyframes fadeInMoveUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInMoveUp 0.8s ease-out forwards;
+        }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-600 { animation-delay: 0.6s; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -23,6 +42,7 @@
     <!-- Header -->
     <header class="bg-white shadow-md py-4 px-6 md:px-12 flex items-center justify-between rounded-b-lg">
         <div class="flex items-center">
+            <!-- Replace with actual company logo -->
             <img src="https://placehold.co/40x40/4CAF50/FFFFFF?text=D" alt="Dronski Logo" class="h-10 w-10 mr-3 rounded-full">
             <a href="#" class="text-2xl font-bold text-green-700">Dronski Pvt Ltd</a>
         </div>
@@ -45,7 +65,7 @@
     <!-- Hero Section -->
     <section id="home" class="relative bg-gradient-to-r from-green-600 to-green-800 text-white py-20 px-6 md:px-12 text-center overflow-hidden rounded-b-lg">
         <div class="absolute inset-0 z-0 opacity-10">
-            <!-- Background pattern or image -->
+            <!-- Background pattern or image (Subtle geometric pattern) -->
             <svg class="w-full h-full" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h100v100H0z" fill="url(#grid-pattern)"></path>
                 <defs>
@@ -77,18 +97,18 @@
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/FFD700/FFFFFF?text=Solar+Installation" alt="Solar Panel Installation" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/28a745/ffffff?text=Residential+Solar" alt="Residential Solar Installation" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Residential Solutions</h3>
                 <p class="text-gray-600">Custom solar installations for homes, designed to maximize energy savings and independence.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/FFD700/FFFFFF?text=Commercial+Solar" alt="Commercial Solar Solutions" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/28a745/ffffff?text=Commercial+Solar" alt="Commercial Solar Solutions" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Commercial & Industrial</h3>
                 <p class="text-gray-600">Scalable solar power systems for businesses and industries, ensuring significant operational cost reductions.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/FFD700/FFFFFF?text=Solar+Maintenance" alt="Solar Panel Maintenance" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/28a745/ffffff?text=Solar+Maintenance" alt="Solar Panel Maintenance" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Maintenance & Support</h3>
                 <p class="text-gray-600">Comprehensive maintenance services to ensure the longevity and optimal performance of your solar assets.</p>
             </div>
@@ -104,18 +124,18 @@
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/2196F3/FFFFFF?text=Drone+Survey" alt="Drone Surveying" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/007bff/ffffff?text=Drone+Surveying" alt="Drone Surveying" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Aerial Surveying & Mapping</h3>
                 <p class="text-gray-600">High-resolution data collection for mapping, construction, and environmental monitoring.</p>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/2196F3/FFFFFF?text=Drone+Inspection" alt="Drone Inspection" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/007bff/ffffff?text=Drone+Inspection" alt="Drone Inspection" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Infrastructure Inspection</h3>
                 <p class="text-gray-600">Safe and efficient inspection of critical infrastructure like pipelines, power lines, and bridges.</p>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/2196F3/FFFFFF?text=Drone+Security" alt="Drone Security" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/007bff/ffffff?text=Drone+Security" alt="Drone Security" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Security & Surveillance</h3>
                 <p class="text-gray-600">Enhance security operations with real-time aerial monitoring and rapid response capabilities.</p>
             </div>
@@ -132,7 +152,7 @@
         </div>
         <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-xl shadow-lg">
             <div class="md:w-1/2">
-                <img src="https://placehold.co/500x300/FF5722/FFFFFF?text=MPPT+Technology" alt="Patented MPPT Technology" class="rounded-lg w-full h-auto object-cover">
+                <img src="https://placehold.co/500x300/ffc107/333333?text=MPPT+Technology" alt="Patented MPPT Technology" class="rounded-lg w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/500x300/cccccc/000000?text=Image+Unavailable';">
             </div>
             <div class="md:w-1/2 text-left">
                 <h3 class="text-3xl font-semibold text-gray-900 mb-4">Unrivaled Efficiency and Performance</h3>
@@ -158,18 +178,18 @@
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/8BC34A/FFFFFF?text=Crop+Monitoring" alt="Crop Monitoring" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/20c997/ffffff?text=Crop+Monitoring" alt="Crop Monitoring" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Precision Crop Monitoring</h3>
                 <p class="text-gray-600">Drones equipped with multispectral cameras provide detailed health analysis of crops.</p>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/8BC34A/FFFFFF?text=Automated+Irrigation" alt="Automated Irrigation" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/20c997/ffffff?text=Automated+Irrigation" alt="Automated Irrigation" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Automated Irrigation & Fertilization</h3>
                 <p class="text-gray-600">Smart systems that deliver water and nutrients precisely where and when needed, reducing waste.</p>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/8BC34A/FFFFFF?text=Farm+Analytics" alt="Farm Analytics" class="rounded-lg mb-4 w-full h-48 object-cover">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                <img src="https://placehold.co/400x250/20c997/ffffff?text=Farm+Analytics" alt="Farm Analytics" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/cccccc/000000?text=Image+Unavailable';">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">Data-Driven Farm Management</h3>
                 <p class="text-gray-600">Actionable insights from collected data to optimize planting, harvesting, and pest control.</p>
             </div>
@@ -203,8 +223,8 @@
                 </div>
             </form>
             <div class="mt-8">
-                <p class="text-lg opacity-90">Email: info@dronski.in</p>
-                <p class="text-lg opacity-90">Phone: +91 98765 43210</p>
+                <p class="text-lg opacity-90">Email: karabimaity55@gmail.com</p>
+                <p class="text-lg opacity-90">Phone: +91 8902676244</p>
             </div>
         </div>
     </section>
