@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Drones | Dronski.in</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drones - Dronski Pvt Ltd</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="logo">Dronski.in</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="solar.html">Solar Panel</a></li>
-      <li><a href="mppt.html">MPPT</a></li>
-      <li><a href="irrigation.html">Irrigation</a></li>
-      <li><a href="drones.html" class="active">Drones</a></li>
-      <li><a href="smart-agriculture.html">Smart Agriculture</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Drones in Agriculture</h1>
-    <p>
-      Explore the future of farming with drones! Monitor crop health, map your fields, and even automate spraying and seeding. Dronski.in brings you precision agriculture at your fingertips.
-    </p>
-    <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80" alt="Agriculture Drone" class="featured-img">
-  </main>
-  <footer>
-    &copy; 2025 Dronski.in. All rights reserved.
-  </footer>
+<header class="site-header">
+  <div class="container">
+    <img src="public/assets/logo.png" alt="Dronski Logo" class="logo">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="solar.html">Solar</a>
+      <a href="mppt.html">MPPT</a>
+      <a href="drones.html" class="active">Drones</a>
+      <a href="agriculture.html">Agri</a>
+      <a href="contact.html" class="btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1400&q=80');">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Advanced Drone Solutions</h1>
+    <p>From aerial monitoring to delivery and agriculture — we make drones work for you.</p>
+  </div>
+</section>
+
+<section class="container" style="margin: 60px auto;">
+  <h2 data-aos="fade-up">Applications</h2>
+  <ul data-aos="fade-up">
+    <li>Crop health monitoring</li>
+    <li>Infrastructure inspection</li>
+    <li>Surveying and mapping</li>
+    <li>Package delivery</li>
+  </ul>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Dronski Pvt Ltd | dronski.in</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
