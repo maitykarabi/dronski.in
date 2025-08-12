@@ -37,7 +37,7 @@ body {
   transition: color 0.3s;
 }
 .logo {
-  height: 60px; /* Adjust to your preferred size */
+  height: 160px; /* Adjust to your preferred size */
   width: auto; /* Keeps proportions */
   display: block;
 }
