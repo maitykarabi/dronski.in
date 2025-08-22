@@ -281,6 +281,24 @@ body.dark-mode {
   transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
 }
+.cta-section {
+  background-color: #f5f7fa;
+  padding: 4rem 2rem; /* add enough top and bottom padding */
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+/* Ensure button spacing */
+.cta-section .btn {
+  margin-top: 1.5rem; /* space between text and button */
+}
+
+/* Optional: Center content container */
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 /* ------------------------------
    Footer
