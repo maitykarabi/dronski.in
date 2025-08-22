@@ -2,49 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Patent MPPT - Dronski Pvt Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patented MPPT Technology | Dronski Pvt Ltd</title>
+  <meta name="description" content="Dronski Pvt Ltd's patented MPPT technology ensures maximum solar energy harvesting for agriculture and beyond." />
+  <meta name="keywords" content="MPPT Technology, Solar Optimization, Dronski Pvt Ltd" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="public/assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 <header class="site-header">
-  <div class="container">
-    <img src="public/assets/logo.png" alt="Dronski Logo" class="logo">
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="solar.html">Solar</a>
-      <a href="mppt.html" class="active">MPPT</a>
-      <a href="drones.html">Drones</a>
-      <a href="agriculture.html">Agri</a>
-      <a href="contact.html" class="btn-primary">Contact</a>
+  <div class="container header-container">
+    <a href="index.html" class="logo-link">
+      <img src="public/assets/logo.png" alt="Dronski Logo" class="logo">
+      <span class="company-name">Dronski Pvt Ltd</span>
+    </a>
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Solutions</a></li>
+        <li><a href="solar.html">Solar</a></li>
+        <li><a href="mppt.html">MPPT</a></li>
+        <li><a href="drones.html">Drones</a></li>
+        <li><a href="agriculture.html">Smart Agri</a></li>
+        <li><a href="contact.html" class="btn">Contact</a></li>
+      </ul>
     </nav>
+    <div class="header-actions">
+      <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
   </div>
 </header>
 
-<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1616401789048-35b233afab8a?auto=format&fit=crop&w=1400&q=80');">
-  <div class="hero-content" data-aos="fade-up">
+<section class="hero" style="background-image:url('public/assets/mppt.jpg')">
+  <div class="hero-content">
     <h1>Patented MPPT Technology</h1>
-    <p>Extract every watt of power with our cutting-edge Maximum Power Point Tracking.</p>
+    <p>Optimize solar power output with our cutting-edge MPPT algorithms.</p>
+    <a href="contact.html" class="btn">Request a Demo</a>
   </div>
 </section>
 
-<section class="container" style="margin: 60px auto;">
-  <h2 data-aos="fade-up">MPPT Advantages</h2>
-  <p data-aos="fade-up">Our patented algorithm ensures your solar systems deliver optimal performance in all light conditions.</p>
-  <ul data-aos="fade-up">
-    <li>Up to 30% more energy yield</li>
-    <li>Real-time adaptive tracking</li>
-    <li>Durable and weatherproof electronics</li>
-  </ul>
+<section class="container about">
+  <div>
+    <h2>Why Our MPPT Stands Out?</h2>
+    <p>Our MPPT (Maximum Power Point Tracking) systems ensure optimal energy harvest under all conditions.</p>
+    <ul>
+      <li><strong>Real-time Tracking:</strong> Adjusts to light variations instantly.</li>
+      <li><strong>Higher Efficiency:</strong> Gain up to 30% more energy output.</li>
+      <li><strong>AI Integration:</strong> Smarter energy optimization with predictive analytics.</li>
+    </ul>
+  </div>
+  <div class="about-img">
+    <img src="public/assets/mppt.jpg" alt="MPPT Technology">
+  </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2025 Dronski Pvt Ltd | dronski.in</p>
-  </div>
+<footer class="footer">
+  <p>&copy; 2025 Dronski Pvt Ltd. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
 </footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 1000, once: true });</script>
+<script src="scripts.js"></script>
 </body>
 </html>
