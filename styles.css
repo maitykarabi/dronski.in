@@ -301,6 +301,63 @@ body.dark-mode {
 .footer a:hover {
   text-decoration: underline;
 }
+/* Adjust Contact Intro Layout */
+.contact-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 4rem auto;
+  align-items: start;
+}
+
+/* For smaller screens */
+@media (max-width: 900px) {
+  .contact-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Founder Card Styling */
+.founder-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.founder-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+.founder-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.founder-card h3 {
+  font-size: 1.5rem;
+  color: #1a73e8;
+  margin-bottom: 0.2rem;
+}
+.founder-card p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Contact Form Styling */
+.contact-section {
+  max-width: 700px;
+  margin: 3rem auto 5rem auto;
+}
+.contact-form .form-group textarea {
+  min-height: 150px;
+}
+
 
 /* ------------------------------
    Responsive Design
