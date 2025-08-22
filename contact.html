@@ -1,99 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get in touch with Dronski Pvt Ltd for sustainable agricultural solutions including solar power, drone technology, and smart farming innovations." />
-  <meta name="keywords" content="Contact Dronski, Solar Energy Support, Drone Solutions, Smart Agriculture Contact" />
-  <title>Contact Us - Dronski Pvt Ltd</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="public/assests/logo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-</head>
-<body>
-
-<header class="site-header">
-  <div class="container header-container">
-    <a href="index.html" class="logo-link">
-      <img src="public/assests/logo.png" alt="Dronski Logo" class="logo">
-      <span class="company-name">Dronski Pvt Ltd</span>
-    </a>
-    <nav class="nav-menu">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="solar.html">Solar</a></li>
-        <li><a href="mppt.html">MPPT</a></li>
-        <li><a href="drones.html">Drones</a></li>
-        <li><a href="agriculture.html">Smart Agri</a></li>
-        <li><a href="contact.html" class="btn active">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-actions">
-      <button id="darkModeToggle">🌙</button>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero contact-hero" style="background-image:url('public/assests/contact-banner.jpg')">
-  <div class="hero-content">
-    <h1>Contact Us</h1>
-    <p>Have questions about our solar, drone, or smart agriculture solutions? We’re here to help.</p>
-  </div>
-</section>
-
-<!-- Contact Form Section -->
-<section class="contact-section container">
+<section class="contact-intro container">
+  <!-- Company Info -->
   <div class="contact-info">
-    <h2>Get in Touch</h2>
-    <p>Our team is ready to assist you with the best solutions for sustainable farming.</p>
+    <h2>Reach Out to Dronski Pvt Ltd</h2>
+    <p>Our team is ready to provide expert guidance and support for your projects.</p>
     <ul>
-      <li><strong>Address:</strong> Dronski Pvt Ltd, Patna, India</li>
+      <li><strong>Address:</strong> Tech Park, Bengaluru, India</li>
       <li><strong>Email:</strong> <a href="mailto:dronskipvtltd@gmail.com">dronskipvtltd@gmail.com</a></li>
     </ul>
-    
+    <div class="social-links">
+      <a href="#"><img src="public/assets/icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="public/assets/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="public/assets/icons/twitter.svg" alt="Twitter"></a>
+    </div>
   </div>
 
-  <div class="contact-form">
-    <form action="submit_form.php" method="POST">
-      <h3>Send Us a Message</h3>
-      <div class="form-group">
-        <label for="name">Full Name*</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address*</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-      </div>
-     
-      <div class="form-group">
-        <label for="message">Your Message*</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-      </div>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <!-- Founder Card -->
+  <div class="founder-card">
+    <img src="public/assets/founder.jpg" alt="Founder of Dronski Pvt Ltd" class="founder-img">
+    <h3>Ms. Karabi Maity</h3>
+    <p>Founder & CEO</p>
+    <p>With over 15 years of experience in renewable energy and smart agriculture, Rajesh leads Dronski with innovation and sustainability at its core.</p>
   </div>
 </section>
 
-
-
-<!-- Call to Action -->
-<section class="cta-section">
-  <h2>Ready to Transform Your Farming?</h2>
-  <p>Contact us today and discover how our technology can improve your agricultural practices.</p>
-  
+<!-- Contact Form -->
+<section class="contact-section container">
+  <form action="submit_form.php" method="POST" class="contact-form">
+    <h3>Send Us a Message</h3>
+    <div class="form-group">
+      <label for="name">Full Name*</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address*</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Your Message*</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
 </section>
-
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2025 Dronski Pvt Ltd. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
-</footer>
-
-<script src="scripts.js"></script>
-</body>
-</html>
