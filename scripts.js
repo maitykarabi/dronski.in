@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const darkModeToggle = document.getElementById("darkModeToggle");
   const body = document.body;
 
-  // Load saved mode
   if (localStorage.getItem("darkMode") === "enabled") {
     body.classList.add("dark-mode");
     if(darkModeToggle) darkModeToggle.textContent = '☀️';
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if(darkModeToggle) darkModeToggle.textContent = '🌙';
   }
 
-  // Toggle dark mode
   if(darkModeToggle){
     darkModeToggle.addEventListener("click", () => {
       body.classList.toggle("dark-mode");
@@ -39,46 +37,48 @@ document.addEventListener("DOMContentLoaded", () => {
   if(typeof gsap !== 'undefined'){
     gsap.registerPlugin(ScrollTrigger);
 
-    // Hero Animations
-    gsap.utils.toArray(".hero-content").forEach(hero => {
-      gsap.from(hero.querySelector("h1"), { opacity: 0, y: 50, duration: 1 });
-      gsap.from(hero.querySelector("p"), { opacity: 0, y: 30, duration: 1, delay: 0.3 });
-      gsap.from(hero.querySelector(".btn"), { opacity: 0, scale: 0.8, duration: 0.8, delay: 0.6 });
+    // Hero Section
+    gsap.from(".hero-content h1", { opacity: 0, y: 50, duration: 1 });
+    gsap.from(".hero-content p", { opacity: 0, y: 30, duration: 1, delay: 0.3 });
+
+    // Founder Card Animation
+    gsap.from(".founder-card", {
+      scrollTrigger: ".founder-card",
+      opacity: 0,
+      x: 50,
+      duration: 1,
+      ease: "power2.out"
     });
 
-    // Services / Cards Animations
-    gsap.utils.toArray(".service-card").forEach((card, i) => {
-      gsap.from(card, {
-        scrollTrigger: card,
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        delay: i * 0.2
-      });
+    // Contact Form Animation
+    gsap.from(".contact-form", {
+      scrollTrigger: ".contact-form",
+      opacity: 0,
+      x: -50,
+      duration: 1,
+      ease: "power2.out"
     });
 
-    // Contact Page Animations
-    const contactSections = [".contact-info", ".contact-form", ".map-section iframe", ".cta-section h2", ".cta-section p", ".cta-section .btn"];
-    contactSections.forEach(sel => {
-      gsap.utils.toArray(sel).forEach(el => {
-        gsap.from(el, {
-          scrollTrigger: el,
-          opacity: 0,
-          y: 50,
-          duration: 1,
-          stagger: 0.2
-        });
-      });
+    // CTA Section Animation
+    gsap.from(".cta-section h2", {
+      scrollTrigger: ".cta-section",
+      opacity: 0,
+      y: 40,
+      duration: 1
     });
-
-    // About Section Animations
-    gsap.utils.toArray(".about-text, .about-img").forEach(el => {
-      gsap.from(el, {
-        scrollTrigger: el,
-        opacity: 0,
-        x: el.classList.contains("about-img") ? 50 : -50,
-        duration: 1
-      });
+    gsap.from(".cta-section p", {
+      scrollTrigger: ".cta-section",
+      opacity: 0,
+      y: 40,
+      duration: 1,
+      delay: 0.2
+    });
+    gsap.from(".cta-section .btn", {
+      scrollTrigger: ".cta-section",
+      opacity: 0,
+      scale: 0.8,
+      duration: 0.8,
+      delay: 0.4
     });
   }
 });
