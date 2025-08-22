@@ -2,53 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Dronski Pvt Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Dronski Pvt Ltd</title>
+  <meta name="description" content="Get in touch with Dronski Pvt Ltd for sustainable solar, drone, and smart agriculture solutions." />
+  <meta name="keywords" content="Contact Dronski, Solar Contact, Drone Contact, Agriculture Contact" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="public/assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 <header class="site-header">
-  <div class="container">
-    <img src="public/assets/logo.png" alt="Dronski Logo" class="logo">
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="solar.html">Solar</a>
-      <a href="mppt.html">MPPT</a>
-      <a href="drones.html">Drones</a>
-      <a href="agriculture.html">Agri</a>
-      <a href="contact.html" class="btn-primary active">Contact</a>
+  <div class="container header-container">
+    <a href="index.html" class="logo-link">
+      <img src="public/assets/logo.png" alt="Dronski Logo" class="logo">
+      <span class="company-name">Dronski Pvt Ltd</span>
+    </a>
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Solutions</a></li>
+        <li><a href="solar.html">Solar</a></li>
+        <li><a href="mppt.html">MPPT</a></li>
+        <li><a href="drones.html">Drones</a></li>
+        <li><a href="agriculture.html">Smart Agri</a></li>
+        <li><a href="contact.html" class="btn">Contact</a></li>
+      </ul>
     </nav>
-  </div>
-</header>
-
-<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1525186402429-b4ff38bedbec?auto=format&fit=crop&w=1400&q=80');">
-  <div class="hero-content" data-aos="fade-up">
-    <h1>Get in Touch</h1>
-    <p>We’d love to hear from you. Let’s discuss how Dronski can help.</p>
-  </div>
-</section>
-
-<section class="container" style="margin: 60px auto;">
-  <h2 data-aos="fade-up">Contact Details</h2>
-  <p data-aos="fade-up">Email: <a href="mailto:info@dronski.in">info@dronski.in</a></p>
-  <p data-aos="fade-up">Phone: +91 98765 43210</p>
-  <p data-aos="fade-up">Address: Dronski Pvt Ltd, 123 Tech Park, New Delhi, India</p>
-
-  <form action="mailto:info@dronski.in" method="post" enctype="text/plain" class="contact-form" data-aos="fade-up">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit" class="btn-primary">Send Message</button>
-  </form>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2025 Dronski Pvt Ltd | dronski.in</p>
-  </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 1000, once: true });</script>
-</body>
-</html>
