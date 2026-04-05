@@ -4,45 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dronski | Smart Agriculture Drones</title>
-<meta name="description" content="Drone-based smart agriculture powered by MPPT energy optimization">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;color:#1f2937}
+body{font-family:'Poppins',sans-serif;color:#111827;background:#f9fafb}
 
-nav{position:fixed;width:100%;display:flex;justify-content:space-between;padding:15px 30px;background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);z-index:1000}
-nav h2{color:#047857}
+nav{position:fixed;width:100%;display:flex;justify-content:space-between;padding:15px 30px;background:rgba(255,255,255,0.8);backdrop-filter:blur(10px);z-index:1000}
+nav h2{color:#059669}
 nav a{margin-left:20px;text-decoration:none;color:#333}
 
 header{position:relative;height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;color:white;overflow:hidden}
-
 .bg-video{position:absolute;width:100%;height:100%;object-fit:cover;z-index:-2}
+.overlay{position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:-1}
 
-.overlay{position:absolute;width:100%;height:100%;background:linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.4));z-index:-1}
+.hero-content{animation:fadeUp 1.2s ease}
+.hero-content h1{font-size:55px}
 
-.hero-content{animation:fadeInUp 1.2s ease}
+.btn{margin-top:20px;background:#10b981;color:white;padding:12px 25px;border:none;border-radius:25px}
 
-@keyframes fadeInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+section{padding:100px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:40px}
 
-.btn{margin-top:20px;background:#10b981;color:white;padding:12px 25px;border:none;border-radius:25px;cursor:pointer}
-.btn:hover{transform:scale(1.08);box-shadow:0 10px 25px rgba(0,0,0,0.3)}
-
-section{padding:80px 20px;max-width:1100px;margin:auto}
-h2{text-align:center;margin-bottom:30px}
-
-.grid{display:grid;gap:20px}
+.grid{display:grid;gap:25px}
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 
-.card{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.1);text-align:center;transition:0.3s}
-.card:hover{transform:translateY(-8px)}
+.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:0.3s}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-content{padding:20px;text-align:center}
+.card:hover{transform:translateY(-10px)}
 
 .cta{text-align:center;background:#ecfdf5;padding:50px;border-radius:20px}
 
 footer{background:#111;color:white;text-align:center;padding:20px}
 
-input,textarea{width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc}
+/* SCROLL ANIMATION */
+.reveal{opacity:0;transform:translateY(50px);transition:1s}
+.reveal.active{opacity:1;transform:translateY(0)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 
@@ -53,7 +54,6 @@ input,textarea{width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1p
 <div>
 <a href="#home">Home</a>
 <a href="#features">Features</a>
-<a href="#investor">Investors</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
@@ -66,38 +66,70 @@ input,textarea{width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1p
 <div class="hero-content">
 <h1>Future of Smart Farming</h1>
 <p>Drone-based agriculture powered by MPPT energy optimization</p>
-<button class="btn">Explore Technology</button>
+<button class="btn">Explore</button>
 </div>
 </header>
 
 <section id="features">
-<h2>Why Dronski?</h2>
+<h2 class="reveal">Our Technology</h2>
 <div class="grid grid-3">
-<div class="card"><h3>Longer Flight</h3><p>Optimized energy efficiency</p></div>
-<div class="card"><h3>Smart Farming</h3><p>Precision agriculture insights</p></div>
-<div class="card"><h3>Solar Powered</h3><p>MPPT based system</p></div>
+
+<div class="card reveal">
+<img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321">
+<div class="card-content">
+<h3>Extended Flight</h3>
+<p>Efficient MPPT ensures longer drone operations and coverage.</p>
+</div>
+</div>
+
+<div class="card reveal">
+<img src="https://images.unsplash.com/photo-1598514982901-2f9c6e77a61f">
+<div class="card-content">
+<h3>Precision Farming</h3>
+<p>Advanced analytics for spraying, monitoring and yield optimization.</p>
+</div>
+</div>
+
+<div class="card reveal">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<div class="card-content">
+<h3>Solar + MPPT</h3>
+<p>Maximizing solar energy usage for sustainable agriculture.</p>
+</div>
+</div>
+
 </div>
 </section>
 
-<section id="investor" class="cta">
-<h2>Investor Opportunity</h2>
-<p>Operating at the intersection of AgriTech, Drone Tech, and Renewable Energy. High growth potential with scalable technology.</p>
-<button class="btn">Download Pitch</button>
+<section class="cta reveal">
+<h2>Supported By</h2>
+<p>Connected with STPI FASAL COE, Pune</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Software_Technology_Parks_of_India_Logo.svg/1200px-Software_Technology_Parks_of_India_Logo.svg.png" width="120">
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
 <h2>Contact Us</h2>
-<form action="https://formspree.io/f/your-id" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Message"></textarea>
-<button class="btn">Send</button>
-</form>
+<p>Email: info@dronski.in</p>
 </section>
 
 <footer>
 <p>© 2026 Dronski | dronski.in</p>
 </footer>
+
+<script>
+function reveal(){
+let reveals=document.querySelectorAll('.reveal');
+for(let i=0;i<reveals.length;i++){
+let windowHeight=window.innerHeight;
+let elementTop=reveals[i].getBoundingClientRect().top;
+let elementVisible=100;
+if(elementTop<windowHeight-elementVisible){
+reveals[i].classList.add('active');
+}
+}
+}
+window.addEventListener('scroll',reveal);
+</script>
 
 </body>
 </html>
