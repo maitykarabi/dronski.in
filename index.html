@@ -3,141 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dronski Pvt Ltd delivers sustainable agricultural solutions with solar power, drone technology, and smart farming innovations." />
-  <meta name="keywords" content="Solar Energy, Drones, Smart Agriculture, MPPT Technology, Renewable Farming" />
-  <title>Dronski Pvt Ltd - Sustainable Agriculture & Innovations</title>
+  <title>Dronski – Smart Agriculture</title>
 
-  <!-- Fonts & Styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="public/assests/logo.png" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Poppins', sans-serif; color:#1f2937; line-height:1.6; }
+
+    /* Navbar */
+    nav {
+      position: sticky; top:0; z-index:1000;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:15px 30px; background:white;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
+    nav h2 { font-weight:700; color:#047857; }
+    nav a { margin-left:20px; text-decoration:none; color:#374151; font-weight:500; }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, #065f46, #10b981);
+      color:white; text-align:center; padding:100px 20px;
+    }
+    header h1 { font-size:52px; margin-bottom:15px; }
+    header p { font-size:18px; max-width:600px; margin:auto; }
+    .btn {
+      margin-top:25px;
+      background:white; color:#047857;
+      padding:12px 25px; border:none;
+      border-radius:25px; cursor:pointer;
+      font-weight:600;
+      transition:0.3s;
+    }
+    .btn:hover { transform:scale(1.05); }
+
+    section { padding:80px 20px; max-width:1100px; margin:auto; }
+
+    /* Grid */
+    .grid { display:grid; gap:25px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); }
+
+    /* Cards */
+    .card {
+      background:white; padding:25px;
+      border-radius:16px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      text-align:center;
+      transition:0.3s;
+    }
+    .card:hover { transform:translateY(-5px); }
+
+    .card h3 { margin-bottom:10px; color:#047857; }
+
+    /* Image */
+    img { width:100%; border-radius:16px; }
+
+    /* Section titles */
+    h2 { font-size:32px; margin-bottom:20px; text-align:center; }
+
+    /* CTA */
+    .cta {
+      text-align:center;
+      background:#f0fdf4;
+      border-radius:20px;
+      padding:50px 20px;
+    }
+
+    /* Footer */
+    footer {
+      background:#111827; color:white;
+      text-align:center; padding:25px;
+    }
+
+    /* Smooth scroll */
+    html { scroll-behavior:smooth; }
+  </style>
 </head>
+
 <body>
 
-<!-- Header -->
-<header class="site-header">
-  <div class="container header-container">
-    <a href="index.html" class="logo-link">
-      <img src="public/assests/logo.png" alt="Dronski Logo" class="logo">
-      <span class="company-name">Dronski Pvt Ltd</span>
-    </a>
-    <nav class="nav-menu">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Solutions</a></li>
-        <li><a href="solar.html">Solar</a></li>
-        <li><a href="mppt.html">MPPT</a></li>
-        <li><a href="drones.html">Drones</a></li>
-        <li><a href="agriculture.html">Smart Agri</a></li>
-        <li><a href="contact.html" class="btn">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-actions">
-      <button id="darkModeToggle">🌙</button>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
+<!-- NAVBAR -->
+<nav>
+  <h2>Dronski</h2>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
   </div>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+  <h1>Smart Agriculture with Drones</h1>
+  <p>
+    Powered by advanced MPPT technology to maximize energy efficiency,
+    extend drone flight time, and transform modern farming.
+  </p>
+  <button class="btn">Explore Technology</button>
 </header>
 
-<!-- Hero Section with Background Video -->
-<section class="hero">
-  <video autoplay muted loop class="hero-video">
-    <source src="public/assests/hero-video.mp4" type="video/mp4">
-    Your browser does not support video.
-  </video>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Innovating Agriculture with Solar, Drones & AI</h1>
-    <p>We empower farmers with renewable energy, precision farming, and smart technology.</p>
-    <a href="contact.html" class="btn">Get in Touch</a>
+<!-- ABOUT -->
+<section id="about" class="grid grid-2">
+  <div>
+    <h2>About Dronski</h2>
+    <p>
+      Dronski Private Limited is an agri-tech startup developing intelligent
+      drone systems integrated with solar-powered MPPT technology.
+      Our mission is to enable efficient, sustainable, and scalable farming.
+    </p>
   </div>
+  <img src="https://images.unsplash.com/photo-1598514982901-2f9c6e77a61f" alt="Drone" />
 </section>
 
-<!-- About Section -->
-<section id="about" class="about container">
-  <div class="about-text">
-    <h2>Empowering Progress Through Innovation</h2>
-    <p>Dronski Pvt Ltd is at the forefront of sustainable farming technologies. We combine renewable energy, drone precision, and AI-powered analytics to help farmers increase productivity while reducing costs and environmental impact.</p>
-    <ul>
-      <li><strong>Integrated Solutions:</strong> Solar + Drone + AI for maximum efficiency.</li>
-      <li><strong>Patented MPPT:</strong> Ensure optimal energy harvest in all conditions.</li>
-      <li><strong>Sustainable Practices:</strong> Designed to protect both farmers and the planet.</li>
-    </ul>
-  </div>
-  <div class="about-img">
-    <img src="public/assests/smart-agri.jpg" alt="Smart Agriculture Solutions">
-  </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="services container">
-  <h2>Our Cutting-Edge Solutions</h2>
-  <div class="service-grid">
-    <div class="service-card">
-      <img src="public/assests/Solar-panels.jpg" alt="Solar Energy">
-      <h3>Solar Solutions</h3>
-      <p>Harness clean energy with our advanced solar panels and MPPT technology, tailored for agricultural needs.</p>
-      <a href="solar.html" class="btn">Learn More</a>
+<!-- FEATURES -->
+<section id="features">
+  <h2>Key Advantages</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Extended Flight Time</h3>
+      <p>More coverage with optimized energy usage</p>
     </div>
-    <div class="service-card">
-      <img src="public/assests/drones.jpg" alt="Agricultural Drones">
-      <h3>Drone Technology</h3>
-      <p>Monitor crops, spray pesticides, and analyze fields with our AI-driven agricultural drones.</p>
-      <a href="drones.html" class="btn">Explore Drones</a>
+    <div class="card">
+      <h3>MPPT Optimization</h3>
+      <p>Maximum solar energy extraction efficiency</p>
     </div>
-    <div class="service-card">
-      <img src="public/assests/smart-agri.jpg" alt="Smart Agriculture">
-      <h3>Smart Agriculture</h3>
-      <p>Leverage AI-based analytics and IoT sensors for precision farming and increased yield.</p>
-      <a href="agriculture.html" class="btn">Discover More</a>
+    <div class="card">
+      <h3>Precision Farming</h3>
+      <p>Accurate spraying, monitoring, and analytics</p>
+    </div>
+    <div class="card">
+      <h3>Cost Reduction</h3>
+      <p>Lower operational and energy costs</p>
+    </div>
+    <div class="card">
+      <h3>Off-Grid Ready</h3>
+      <p>Perfect for rural and remote farming</p>
+    </div>
+    <div class="card">
+      <h3>Sustainable</h3>
+      <p>Eco-friendly agriculture solutions</p>
     </div>
   </div>
 </section>
 
-<!-- Call to Action -->
+<!-- CTA -->
 <section class="cta">
-  <div class="cta-content">
-    <h2>Ready to Transform Your Farm?</h2>
-    <p>Join us in revolutionizing agriculture with clean energy and smart technology.</p>
-    <a href="contact.html" class="btn">Contact Us Today</a>
-  </div>
+  <h2>Ready to Transform Agriculture?</h2>
+  <p>Partner with us to bring next-gen drone technology to farming</p>
+  <button class="btn">Contact Us</button>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2025 Dronski Pvt Ltd. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+<!-- CONTACT -->
+<section id="contact" style="text-align:center">
+  <h2>Contact Us</h2>
+  <p>Email: info@dronski.in</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Dronski Private Limited | dronski.in</p>
 </footer>
 
-<!-- Animations -->
-<script>
-  gsap.from(".hero-content h1", {y: 50, opacity: 0, duration: 1, ease: "power3.out"});
-  gsap.from(".hero-content p", {y: 50, opacity: 0, duration: 1, delay: 0.3, ease: "power3.out"});
-  gsap.from(".hero-content a", {y: 50, opacity: 0, duration: 1, delay: 0.6, ease: "power3.out"});
-
-  gsap.utils.toArray(".service-card").forEach((card, i) => {
-    gsap.from(card, {
-      scrollTrigger: { trigger: card, start: "top 80%" },
-      y: 100, opacity: 0, duration: 1, delay: i * 0.2, ease: "power3.out"
-    });
-  });
-
-  gsap.from(".about-text", {
-    scrollTrigger: { trigger: ".about", start: "top 80%" },
-    x: -100, opacity: 0, duration: 1, ease: "power3.out"
-  });
-  gsap.from(".about-img", {
-    scrollTrigger: { trigger: ".about", start: "top 80%" },
-    x: 100, opacity: 0, duration: 1, ease: "power3.out"
-  });
-</script>
-
-<script src="scripts.js"></script>
 </body>
 </html>
