@@ -3,170 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dronski – Smart Agriculture</title>
 
-  <!-- Google Font -->
+  <!-- SEO -->
+  <title>Dronski | Smart Agriculture Drones</title>
+  <meta name="description" content="Dronski develops smart agriculture drones powered by MPPT technology for efficient and sustainable farming." />
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: 'Poppins', sans-serif; color:#1f2937; line-height:1.6; }
+    body { font-family:'Poppins', sans-serif; color:#1f2937; }
 
-    /* Navbar */
     nav {
-      position: sticky; top:0; z-index:1000;
-      display:flex; justify-content:space-between; align-items:center;
-      padding:15px 30px; background:white;
-      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      position:fixed; width:100%; z-index:1000;
+      display:flex; justify-content:space-between;
+      padding:15px 30px; background:rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
     }
-    nav h2 { font-weight:700; color:#047857; }
-    nav a { margin-left:20px; text-decoration:none; color:#374151; font-weight:500; }
+    nav h2 { color:#047857; }
+    nav a { margin-left:20px; text-decoration:none; color:#333; }
 
-    /* Hero */
     header {
-      background: linear-gradient(135deg, #065f46, #10b981);
-      color:white; text-align:center; padding:100px 20px;
+      position:relative; height:100vh;
+      display:flex; flex-direction:column;
+      justify-content:center; align-items:center;
+      color:white; text-align:center;
+      overflow:hidden;
     }
-    header h1 { font-size:52px; margin-bottom:15px; }
-    header p { font-size:18px; max-width:600px; margin:auto; }
+
+    header video {
+      position:absolute; width:100%; height:100%;
+      object-fit:cover; z-index:-1;
+    }
+
+    header h1 { font-size:55px; }
+    header p { max-width:600px; }
+
     .btn {
-      margin-top:25px;
-      background:white; color:#047857;
-      padding:12px 25px; border:none;
-      border-radius:25px; cursor:pointer;
-      font-weight:600;
-      transition:0.3s;
+      margin-top:20px;
+      background:#10b981; color:white;
+      padding:12px 25px;
+      border:none; border-radius:25px;
+      cursor:pointer;
     }
-    .btn:hover { transform:scale(1.05); }
 
     section { padding:80px 20px; max-width:1100px; margin:auto; }
+    h2 { text-align:center; margin-bottom:30px; }
 
-    /* Grid */
-    .grid { display:grid; gap:25px; }
-    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); }
+    .grid { display:grid; gap:20px; }
     .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); }
 
-    /* Cards */
     .card {
       background:white; padding:25px;
-      border-radius:16px;
-      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      border-radius:15px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
       text-align:center;
       transition:0.3s;
     }
-    .card:hover { transform:translateY(-5px); }
+    .card:hover { transform:translateY(-8px); }
 
-    .card h3 { margin-bottom:10px; color:#047857; }
+    .cta { text-align:center; background:#ecfdf5; padding:50px; border-radius:20px; }
 
-    /* Image */
-    img { width:100%; border-radius:16px; }
+    footer { background:#111; color:white; text-align:center; padding:20px; }
 
-    /* Section titles */
-    h2 { font-size:32px; margin-bottom:20px; text-align:center; }
-
-    /* CTA */
-    .cta {
-      text-align:center;
-      background:#f0fdf4;
-      border-radius:20px;
-      padding:50px 20px;
+    input, textarea {
+      width:100%; padding:10px; margin:10px 0;
+      border-radius:8px; border:1px solid #ccc;
     }
 
-    /* Footer */
-    footer {
-      background:#111827; color:white;
-      text-align:center; padding:25px;
-    }
-
-    /* Smooth scroll */
-    html { scroll-behavior:smooth; }
   </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
   <h2>Dronski</h2>
   <div>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
     <a href="#features">Features</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <header id="home">
-  <h1>Smart Agriculture with Drones</h1>
-  <p>
-    Powered by advanced MPPT technology to maximize energy efficiency,
-    extend drone flight time, and transform modern farming.
-  </p>
-  <button class="btn">Explore Technology</button>
+  <video autoplay muted loop>
+    <source src="https://cdn.coverr.co/videos/coverr-flying-drone-over-field-5176/1080p.mp4" type="video/mp4">
+  </video>
+  <h1>Future of Smart Farming</h1>
+  <p>Drone-based agriculture powered by MPPT energy optimization</p>
+  <button class="btn">Get Started</button>
 </header>
 
-<!-- ABOUT -->
-<section id="about" class="grid grid-2">
-  <div>
-    <h2>About Dronski</h2>
-    <p>
-      Dronski Private Limited is an agri-tech startup developing intelligent
-      drone systems integrated with solar-powered MPPT technology.
-      Our mission is to enable efficient, sustainable, and scalable farming.
-    </p>
-  </div>
-  <img src="https://images.unsplash.com/photo-1598514982901-2f9c6e77a61f" alt="Drone" />
-</section>
-
-<!-- FEATURES -->
 <section id="features">
-  <h2>Key Advantages</h2>
+  <h2>Why Dronski?</h2>
   <div class="grid grid-3">
-    <div class="card">
-      <h3>Extended Flight Time</h3>
-      <p>More coverage with optimized energy usage</p>
-    </div>
-    <div class="card">
-      <h3>MPPT Optimization</h3>
-      <p>Maximum solar energy extraction efficiency</p>
-    </div>
-    <div class="card">
-      <h3>Precision Farming</h3>
-      <p>Accurate spraying, monitoring, and analytics</p>
-    </div>
-    <div class="card">
-      <h3>Cost Reduction</h3>
-      <p>Lower operational and energy costs</p>
-    </div>
-    <div class="card">
-      <h3>Off-Grid Ready</h3>
-      <p>Perfect for rural and remote farming</p>
-    </div>
-    <div class="card">
-      <h3>Sustainable</h3>
-      <p>Eco-friendly agriculture solutions</p>
-    </div>
+    <div class="card"><h3>Longer Flight</h3><p>Optimized energy efficiency</p></div>
+    <div class="card"><h3>Smart Farming</h3><p>Precision agriculture insights</p></div>
+    <div class="card"><h3>Solar Powered</h3><p>MPPT based energy system</p></div>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
-  <h2>Ready to Transform Agriculture?</h2>
-  <p>Partner with us to bring next-gen drone technology to farming</p>
-  <button class="btn">Contact Us</button>
+  <h2>Partner With Us</h2>
+  <p>Innovate agriculture with advanced drone tech</p>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" style="text-align:center">
-  <h2>Contact Us</h2>
-  <p>Email: info@dronski.in</p>
+<section id="contact">
+  <h2>Contact</h2>
+  <form onsubmit="sendMail(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 Dronski Private Limited | dronski.in</p>
+  <p>© 2026 Dronski | dronski.in</p>
 </footer>
+
+<script>
+function sendMail(e) {
+  e.preventDefault();
+  alert("Message sent! (Connect backend for real email)");
+}
+</script>
 
 </body>
 </html>
