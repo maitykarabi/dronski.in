@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dronski | Smart Agriculture</title>
+
+<title>Dronski | Smart Agriculture Drone Technology</title>
+
+<meta name="description" content="Dronski provides drone-based smart agriculture solutions powered by MPPT technology for efficient, sustainable farming.">
+<meta name="keywords" content="drone agriculture, smart farming, agri drone India, MPPT solar farming, precision agriculture">
+<meta name="author" content="Dronski Private Limited">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="public/assests/logo.png">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Dronski Smart Agriculture">
+<meta property="og:description" content="Drone-powered smart farming with MPPT energy optimization">
+<meta property="og:image" content="public/assests/logo.png">
+<meta property="og:type" content="website">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dronski Smart Agriculture">
+<meta name="twitter:description" content="Smart agriculture powered by drone and MPPT technology">
+<meta name="twitter:image" content="public/assests/logo.png">
+
 <link rel="stylesheet" href="styles.css">
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dronski Private Limited",
+  "url": "https://dronski.in",
+  "logo": "https://dronski.in/public/assests/logo.png",
+  "description": "Drone-based smart agriculture solutions using MPPT technology."
+}
+</script>
+
 </head>
 
 <body>
@@ -37,7 +72,7 @@
   <div class="hero-content">
     <h1>Future of Smart Farming</h1>
     <p>Drone-based agriculture powered by MPPT energy optimization</p>
-    <button class="btn">Explore</button>
+    <button class="btn" onclick="scrollToSection()">Explore</button>
   </div>
 </header>
 
@@ -48,26 +83,26 @@
   <div class="grid grid-3">
 
     <div class="card reveal">
-      <img src="public/assests/agri-drone.jpg">
+      <img src="public/assests/agri-drone.jpg" alt="Agri Drone">
       <div class="card-content">
         <h3>Extended Flight</h3>
-        <p>Efficient MPPT ensures longer drone operations and coverage.</p>
+        <p>Efficient MPPT ensures longer drone operations and improved coverage.</p>
       </div>
     </div>
 
     <div class="card reveal">
-      <img src="public/assests/agriculture.jpg">
+      <img src="public/assests/agriculture.jpg" alt="Precision Farming">
       <div class="card-content">
         <h3>Precision Farming</h3>
-        <p>Advanced analytics for spraying, monitoring and yield optimization.</p>
+        <p>Advanced analytics for spraying, monitoring, and yield optimization.</p>
       </div>
     </div>
 
     <div class="card reveal">
-      <img src="public/assests/mppt-solar.jpg">
+      <img src="public/assests/mppt-solar.jpg" alt="Solar MPPT">
       <div class="card-content">
         <h3>Solar + MPPT</h3>
-        <p>Maximizing solar energy usage for sustainable agriculture.</p>
+        <p>Maximizing solar energy efficiency for sustainable agriculture.</p>
       </div>
     </div>
 
@@ -78,7 +113,7 @@
 <section class="cta reveal">
   <h2>Supported By</h2>
   <p>Connected with STPI FASAL COE, Pune</p>
-  <img src="public/assests/stpi_fasal.jpg" width="120">
+  <img src="public/assests/stpi_fasal.jpg" width="120" alt="STPI Logo">
 </section>
 
 <!-- CONTACT -->
@@ -90,7 +125,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Dronski Private Limited</p>
+  <p>© 2026 Dronski Private Limited | dronski.in</p>
 </footer>
 
 <!-- DARK MODE BUTTON -->
@@ -98,6 +133,7 @@
 
 <!-- SCRIPTS -->
 <script>
+// SCROLL ANIMATION
 function reveal(){
   let reveals=document.querySelectorAll('.reveal');
   for(let i=0;i<reveals.length;i++){
@@ -111,6 +147,11 @@ function reveal(){
 }
 window.addEventListener('scroll',reveal);
 
+// SCROLL BUTTON
+function scrollToSection(){
+  document.getElementById("features").scrollIntoView({behavior:"smooth"});
+}
+
 // DARK MODE
 function toggleDarkMode(){
   document.body.classList.toggle("dark");
@@ -122,6 +163,7 @@ function toggleDarkMode(){
   }
 }
 
+// LOAD THEME
 window.onload=function(){
   if(localStorage.getItem("theme")==="dark"){
     document.body.classList.add("dark");
