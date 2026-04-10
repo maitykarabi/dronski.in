@@ -11,34 +11,9 @@
 <meta name="keywords" content="drone agriculture, smart farming, agri drone India, MPPT solar farming, precision agriculture">
 <meta name="author" content="Dronski Private Limited">
 
-<!-- FAVICON -->
-<link rel="icon" type="image/png" href="public/assests/logo.png">
-
-<!-- OPEN GRAPH -->
-<meta property="og:title" content="Dronski Smart Agriculture">
-<meta property="og:description" content="Drone-powered smart farming with MPPT energy optimization">
-<meta property="og:image" content="public/assests/logo.png">
-<meta property="og:type" content="website">
-
-<!-- TWITTER -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dronski Smart Agriculture">
-<meta name="twitter:description" content="Smart agriculture powered by drone and MPPT technology">
-<meta name="twitter:image" content="public/assests/logo.png">
+<link rel="icon" type="image/png" href="public/assetes/favicon.png">
 
 <link rel="stylesheet" href="styles.css">
-
-<!-- STRUCTURED DATA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Dronski Private Limited",
-  "url": "https://dronski.in",
-  "logo": "https://dronski.in/public/assests/logo.png",
-  "description": "Drone-based smart agriculture solutions using MPPT technology."
-}
-</script>
 
 </head>
 
@@ -47,7 +22,7 @@
 <!-- NAVBAR -->
 <nav>
   <div class="logo">
-    <img src="public/assests/logo.png" alt="Dronski Logo">
+    <img src="public/assetes/logo.png" alt="Dronski Logo">
     <div>
       <h2>Dronski</h2>
       <span>Smart Agriculture</span>
@@ -57,6 +32,7 @@
   <div>
     <a href="#home">Home</a>
     <a href="#features">Technology</a>
+    <a href="#careers">Careers</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -64,7 +40,7 @@
 <!-- HERO -->
 <header id="home">
   <video autoplay muted loop playsinline class="bg-video">
-    <source src="public/assests/video.mp4" type="video/mp4">
+    <source src="public/assetes/video.mp4" type="video/mp4">
   </video>
 
   <div class="overlay"></div>
@@ -83,7 +59,7 @@
   <div class="grid grid-3">
 
     <div class="card reveal">
-      <img src="public/assests/agri-drone.jpg" alt="Agri Drone">
+      <img src="public/assetes/agri-drone.jpg" alt="Agri Drone">
       <div class="card-content">
         <h3>Extended Flight</h3>
         <p>Efficient MPPT ensures longer drone operations and improved coverage.</p>
@@ -91,7 +67,7 @@
     </div>
 
     <div class="card reveal">
-      <img src="public/assests/agriculture.jpg" alt="Precision Farming">
+      <img src="public/assetes/agriculture.jpg" alt="Precision Farming">
       <div class="card-content">
         <h3>Precision Farming</h3>
         <p>Advanced analytics for spraying, monitoring, and yield optimization.</p>
@@ -99,7 +75,7 @@
     </div>
 
     <div class="card reveal">
-      <img src="public/assests/mppt-solar.jpg" alt="Solar MPPT">
+      <img src="public/assetes/mppt-solar.jpg" alt="Solar MPPT">
       <div class="card-content">
         <h3>Solar + MPPT</h3>
         <p>Maximizing solar energy efficiency for sustainable agriculture.</p>
@@ -113,13 +89,52 @@
 <section class="cta reveal">
   <h2>Supported By</h2>
   <p>Connected with STPI FASAL COE, Pune</p>
-  <img src="public/assests/stpi_fasal.jpg" width="120" alt="STPI Logo">
+  <img src="public/assestes/stpi_fasal.jpg" width="120" alt="STPI Logo">
+</section>
+
+<!-- CAREERS -->
+<section id="careers" class="reveal">
+  <h2>Careers & Internships</h2>
+  <p>Join Dronski and build the future of smart agriculture 🚀</p>
+
+  <div class="grid grid-3">
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Drone Engineering Intern</h3>
+        <p>Work on UAV systems, flight optimization, and hardware integration.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>AI / Data Intern</h3>
+        <p>Develop smart farming analytics and crop intelligence solutions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Embedded Systems Intern</h3>
+        <p>Work on MPPT systems, sensors, and real-time control systems.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br>
+
+  <!-- REPLACE LINK BELOW WITH YOUR GOOGLE FORM -->
+  <a href="https://forms.gle/ePt4nNjs1zDWAzh87" target="_blank">
+    <button class="btn">Apply Now</button>
+  </a>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="reveal">
   <h2>Contact Us</h2>
-  <p>Email: info@dronski.in</p>
+  <p>Email: dronskipvtltd@gmail.com</p>
   <p>Location: India</p>
 </section>
 
@@ -133,7 +148,6 @@
 
 <!-- SCRIPTS -->
 <script>
-// SCROLL ANIMATION
 function reveal(){
   let reveals=document.querySelectorAll('.reveal');
   for(let i=0;i<reveals.length;i++){
@@ -147,12 +161,10 @@ function reveal(){
 }
 window.addEventListener('scroll',reveal);
 
-// SCROLL BUTTON
 function scrollToSection(){
   document.getElementById("features").scrollIntoView({behavior:"smooth"});
 }
 
-// DARK MODE
 function toggleDarkMode(){
   document.body.classList.toggle("dark");
 
@@ -163,7 +175,6 @@ function toggleDarkMode(){
   }
 }
 
-// LOAD THEME
 window.onload=function(){
   if(localStorage.getItem("theme")==="dark"){
     document.body.classList.add("dark");
